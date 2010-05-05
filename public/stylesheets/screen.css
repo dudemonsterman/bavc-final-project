@@ -1,0 +1,18 @@
+#container {
+  width:800px;
+  margin:0 auto;
+  border:solid 3px #DDD;
+  padding:5px;
+}
+
+#header {
+  
+}
+
+#content {
+  
+}
+
+#footer {
+  text-align:center;
+}
