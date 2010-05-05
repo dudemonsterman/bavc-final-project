@@ -8,10 +8,9 @@
     <%= f.text_field :title %>
   </p>
 	<p>
-		<% f.fields_for :location do |location| %>
-			<%= f.label :lacation %><br />
-			<%= location.text_field :name %>
-		<% end %>	
+		<%= f.label :lacation %><br />
+		<%= f.select "location_id", Location.all.collect {|p| [p.name, p.id ] }%>	
+		<%= fields_for_new_location %>
 	</p>
   <p>
     <%= f.label :body %><br />

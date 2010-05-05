@@ -5,7 +5,7 @@
 
 <p>
   <b>Address:</b>
-  <%= google_map (@location.address, :size => "275x275") %>
+  <%= google_map (@location.address) %>
 </p>
 
 
